@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Header from './component/Header';
+import Dashboard from './pages/Dashboard/index';
+import SearchBox from './component/searchbox/index';
+import {BrowserRouter , Routes , Route} from 'react-router-dom'
+import Sidebar from './component/Sidebar';
+import Image from './component/Image/Image';
+import Contact from './component/Contact/Contact';
+import Course from './component/Course/Course';
+
+
+
+function App (){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<>
+<BrowserRouter>
+<Header/>
+<div className='main d-flex'>
+<div className='sidebarWrapper'>
+<Sidebar/>
+
+
+</div>
+<div className='content'>
+<Routes>
+    <Route path ="/" exact ={true} element ={<Dashboard/>}/>
+    <Route path ="/dashboard" element ={<Dashboard/>}/>
+    <Route path ="/image" element ={<Image/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+    <Route path='/course' element={<Course/>}/>
+   
+
+  
+    <Route></Route>
+  </Routes>
+
+</div>
+</div>
+ 
+</BrowserRouter>
+</>
+  )
 }
 
-export default App;
+export default App
+
+
+
