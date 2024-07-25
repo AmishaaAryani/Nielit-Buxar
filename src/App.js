@@ -8,6 +8,7 @@ import Sidebar from './component/Sidebar';
 import Image from './component/Image/Image';
 import Contact from './component/Contact/Contact';
 import Course from './component/Course/Course';
+import Rating from './component/CourseRating/Rating'
 
 
 
@@ -29,7 +30,7 @@ function App (){
     <Route path ="/image" element ={<Image/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/course' element={<Course/>}/>
-   
+    <Route path='/rating' element={<Rating/>}/>
 
   
     <Route></Route>

@@ -22,7 +22,7 @@ body{
   .main .sidebarWrapper{width: 20%; flex: 0 0 20%; transition: all 0.3s ease-in-out;}
 
   .main .sidebarWrapper .sidebar{ width: 20%; height: 100vh; position: fixed; top: 70px
-0px; background:white;}
+  0px; background:white;}
 
 .main .sidebarWrapper .sidebar ul{margin-bottom: 0px;margin-top: 120px;}
 
@@ -78,7 +78,8 @@ thead {
   }
   
   .card-content{
-    width:100%;
+    width:80%;
+    
   }
 
 .card-header i.fa {

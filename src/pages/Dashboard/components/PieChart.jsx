@@ -41,7 +41,7 @@ const Piech = () => {
       };
       return (
        
-        <div style={{ width: '900px', height: '400px',margin:'20px',float:'middle'}}>
+        <div style={{ width: '900px', height: '300px',margin:'20px',float:'middle'}}>
           <Pie data={data} options={options} />
         </div>
        
